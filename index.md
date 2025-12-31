@@ -4,39 +4,48 @@ classes: wide
 title: ""
 permalink: /
 author_profile: false
-header:
-  overlay_color: "#ffffff"
-  overlay_filter: "0.0"
-  teaser: /assets/img/og.png
 ---
 
-<div class="mm-callout">
-  <p style="margin:0; font-size:0.95rem; color: var(--muted);">PhD Candidate • Machine Learning</p>
-  <h1 style="margin:0.35rem 0 0.4rem 0;">Structural Reasoning, Interpretability, and Robust Evaluation</h1>
-  <p style="margin:0.2rem 0 0 0; color: var(--muted);">
-    I develop reproducible methods to understand and evaluate modern ML systems, with emphasis on
-    structure-aware modeling and trustworthy inference.
-  </p>
-  <p style="margin:0.8rem 0 0 0;">
-    <a href="/about/">About</a> &nbsp;·&nbsp;
-    <a href="/projects/">Research</a> &nbsp;·&nbsp;
-    <a href="/publications/">Publications</a> &nbsp;·&nbsp;
-    <a href="/cv/">CV</a>
-  </p>
-</div>
+<section class="mck-hero">
+  <div class="mck-wrap">
+    <div class="mck-grid">
+      <div>
+        <p class="mck-kicker">PhD Candidate • Machine Learning</p>
+        <h1 class="mck-title">What’s your next<br/>robust evaluation move?</h1>
+        <p class="mck-sub">
+          I design structure-aware learning and evaluation methods for modern ML systems—
+          focusing on faithfulness, robustness, and reproducible measurement.
+        </p>
 
-<div class="kpi-grid">
-  <div class="kpi">
-    <p class="kpi__value">X+</p>
-    <p class="kpi__label">Peer-reviewed papers (update)</p>
+        <a class="mck-cta" href="/projects/">
+          Explore research <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="mck-card">
+        <p class="mck-card-label">Case Study</p>
+        <p class="mck-card-title">Resilience and growth in safety evaluation</p>
+        <p class="mck-card-meta">
+          A measurement-first pipeline to stress-test multimodal systems under adversarial prompting and distribution shift.
+        </p>
+        <a class="mck-card-link" href="/projects/">Read the case study →</a>
+      </div>
+    </div>
   </div>
-  <div class="kpi">
-    <p class="kpi__value">Y</p>
-    <p class="kpi__label">Primary research themes</p>
+</section>
+
+<div class="mck-kpis">
+  <div class="mck-kpi">
+    <p class="v">X+</p>
+    <p class="l">Peer-reviewed papers</p>
   </div>
-  <div class="kpi">
-    <p class="kpi__value">Z</p>
-    <p class="kpi__label">Open-source projects (update)</p>
+  <div class="mck-kpi">
+    <p class="v">Y</p>
+    <p class="l">Research themes</p>
+  </div>
+  <div class="mck-kpi">
+    <p class="v">Z</p>
+    <p class="l">Open-source repos</p>
   </div>
 </div>
 
@@ -49,7 +58,3 @@ header:
 - Safety and robustness evaluation for multimodal / generative systems
 - Explainability and faithful evidence for graph-based models
 - Benchmarking and measurement methodology (ablation-first)
-
-## Latest
-- See **Research** for selected projects with artifacts and results.
-- See **Publications** for papers and preprints.
