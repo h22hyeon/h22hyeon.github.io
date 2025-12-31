@@ -35,22 +35,42 @@ author_profile: false
 </section>
 
 
-## Executive Summary
+<div class="content-sections">
+  <div class="content-box content-box-summary">
+    <h2>Executive Summary</h2>
+    <p>I design and evaluate structure-aware learning systems for modern machine learning applications. My approach centers on clear hypotheses, controlled experiments, and reproducible artifacts that advance both theoretical understanding and practical deployment.</p>
+    
+    <div class="competencies">
+      <div class="competency-item">
+        <strong>Research methodology</strong>
+        <p>Hypothesis-driven experimentation with rigorous evaluation protocols</p>
+      </div>
+      <div class="competency-item">
+        <strong>Technical depth</strong>
+        <p>Structural reasoning, interpretability, and robust measurement frameworks</p>
+      </div>
+      <div class="competency-item">
+        <strong>Practical impact</strong>
+        <p>Reproducible artifacts, open-source tools, and benchmark contributions</p>
+      </div>
+    </div>
+  </div>
 
-I design and evaluate structure-aware learning systems for modern machine learning applications. My approach centers on clear hypotheses, controlled experiments, and reproducible artifacts that advance both theoretical understanding and practical deployment.
-
-**Core competencies:**
-- **Research methodology:** hypothesis-driven experimentation with rigorous evaluation protocols
-- **Technical depth:** structural reasoning, interpretability, and robust measurement frameworks
-- **Practical impact:** reproducible artifacts, open-source tools, and benchmark contributions
-
-## Current Focus
-
-**Safety and robustness evaluation**  
-Developing measurement-first pipelines to stress-test multimodal and generative systems under adversarial conditions and distribution shifts.
-
-**Explainability and faithful evidence**  
-Building interpretable frameworks for graph-based models that provide traceable decision paths and verifiable evidence.
-
-**Benchmarking and measurement methodology**  
-Creating ablation-first evaluation protocols that isolate causal factors and enable reproducible research outcomes.
+  <div class="content-box content-box-focus">
+    <h2>Current Focus</h2>
+    <div class="focus-items">
+      <div class="focus-item">
+        <h3>Safety and robustness evaluation</h3>
+        <p>Developing measurement-first pipelines to stress-test multimodal and generative systems under adversarial conditions and distribution shifts.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Explainability and faithful evidence</h3>
+        <p>Building interpretable frameworks for graph-based models that provide traceable decision paths and verifiable evidence.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Benchmarking and measurement methodology</h3>
+        <p>Creating ablation-first evaluation protocols that isolate causal factors and enable reproducible research outcomes.</p>
+      </div>
+    </div>
+  </div>
+</div>
