@@ -1,6 +1,10 @@
 ---
 ---
 
+@charset "utf-8";
+
+/* Minimal Mistakes recommends importing the skin before the theme */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
 /* =========================
@@ -20,7 +24,7 @@
   --card: rgba(255,255,255,0.06);
   --card-border: rgba(255,255,255,0.14);
   --card-hover: rgba(255,255,255,0.10);
-  --accent: #67b7ff; /* subtle McK-like blue */
+  --accent: #67b7ff;
 }
 
 html { font-size: 16px; }
@@ -30,19 +34,13 @@ body{
   letter-spacing: 0.1px;
 }
 
-.page__content h1, .page__content h2, .page__content h3{
-  letter-spacing: -0.02em;
-}
-
 /* ----- Masthead (top bar) ----- */
 .masthead{
   background: linear-gradient(180deg, var(--navy-0), var(--navy-1));
   border-bottom: 1px solid var(--line);
 }
 
-.greedy-nav{
-  background: transparent;
-}
+.greedy-nav{ background: transparent; }
 
 .greedy-nav a{
   color: rgba(255,255,255,0.86);
@@ -54,27 +52,37 @@ body{
   text-decoration: none;
 }
 
-.site-title, .site-title:visited{
-  color: rgba(255,255,255,0.92);
-}
+.site-title, .site-title:visited{ color: rgba(255,255,255,0.92); }
 
-.masthead__menu-item a{
-  color: rgba(255,255,255,0.82);
-}
+.masthead__menu-item a{ color: rgba(255,255,255,0.82); }
+.masthead__menu-item a:hover{ color: #fff; }
 
-.masthead__menu-item a:hover{
-  color: #fff;
-}
-
-/* ----- Home hero ----- */
+/* ----- Home hero (base look) ----- */
 .mck-hero{
   background: radial-gradient(1200px 600px at 15% 30%, rgba(103,183,255,0.15), transparent 55%),
               radial-gradient(900px 600px at 70% 35%, rgba(10,42,102,0.35), transparent 60%),
               linear-gradient(180deg, var(--navy-1), #04101c);
   border-bottom: 1px solid rgba(0,0,0,0.06);
   padding: 3.2rem 0 2.6rem 0;
-  margin-top: -1.2rem; /* pulls up under masthead a bit */
+  margin-top: -1.2rem;
 }
+
+/* ---- FORCE FULL-BLEED (this fixes the white gutters) ----
+   This pattern is robust inside constrained containers. */
+.page__content .mck-hero{
+  position: relative !important;
+  left: 50% !important;
+  right: 50% !important;
+
+  width: 100vw !important;
+  max-width: none !important;
+
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+}
+
+/* Prevent horizontal scrollbar from 100vw including scrollbar width */
+html, body { overflow-x: hidden; }
 
 .mck-wrap{
   max-width: 1180px;
@@ -137,9 +145,7 @@ body{
   height: 100%;
 }
 
-.mck-card:hover{
-  background: var(--card-hover);
-}
+.mck-card:hover{ background: var(--card-hover); }
 
 .mck-card-label{
   color: rgba(255,255,255,0.62);
@@ -169,9 +175,7 @@ body{
   text-decoration: none;
 }
 
-.mck-card-link:hover{
-  text-decoration: underline;
-}
+.mck-card-link:hover{ text-decoration: underline; }
 
 /* ----- KPI row under hero ----- */
 .mck-kpis{
@@ -196,6 +200,7 @@ body{
   margin: 0;
   color: var(--ink);
 }
+
 .mck-kpi .l{
   margin: 0.25rem 0 0 0;
   color: var(--muted);
@@ -216,23 +221,4 @@ body{
   .mck-grid{ grid-template-columns: 1fr; }
   .mck-title{ font-size: 2.35rem; }
   .mck-kpis{ grid-template-columns: 1fr; }
-}
-
-/* Full-bleed utility: background spans full viewport width while content stays centered */
-.mck-hero {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-}
-
-/* Optional: KPI row also full-bleed so the white gutters disappear there too */
-.mck-kpis {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-}
-
-/* Avoid horizontal scrollbars caused by 100vw including scrollbar width */
-html, body {
-  overflow-x: hidden;
 }
