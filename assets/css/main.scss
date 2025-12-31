@@ -218,21 +218,21 @@ body{
   .mck-kpis{ grid-template-columns: 1fr; }
 }
 
-/* Make hero (and optional sections) full-bleed across viewport */
+/* Full-bleed utility: background spans full viewport width while content stays centered */
 .mck-hero {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
 
-/* Optional: if you want the KPI row to align with the same full-bleed band */
+/* Optional: KPI row also full-bleed so the white gutters disappear there too */
 .mck-kpis {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
 
-/* Prevent horizontal scrollbars that can happen with 100vw + scrollbar width */
+/* Avoid horizontal scrollbars caused by 100vw including scrollbar width */
 html, body {
   overflow-x: hidden;
 }
