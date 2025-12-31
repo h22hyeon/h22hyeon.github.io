@@ -255,4 +255,23 @@ hr, .page__content hr {
   }
   .mck-kpi .v { color: rgba(255,255,255,0.96) !important; }
   .mck-kpi .l { color: rgba(255,255,255,0.78) !important; }
-  
+
+/* =========================
+   McKinsey-style content surface
+   ========================= */
+
+/* Main content sits on a subtle glass panel */
+.page__content {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-radius: 18px;
+  padding: 3rem 3.2rem;
+  margin: 3.5rem auto 4rem auto;
+
+  max-width: 980px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+}
