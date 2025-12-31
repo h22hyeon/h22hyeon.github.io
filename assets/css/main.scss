@@ -106,3 +106,84 @@ th {
   border-top: 1px solid rgba(255,255,255,0.12) !important;
   color: rgba(255,255,255,0.70) !important;
 }
+
+/* ============================================================
+   FORCE GLOBAL DARK CANVAS (wins over Minimal Mistakes wrappers)
+   Paste at the VERY END of assets/css/main.scss
+   ============================================================ */
+
+/* The only background that should exist */
+html, body {
+  background: radial-gradient(1200px 600px at 15% 30%, rgba(103,183,255,0.14), transparent 55%),
+              radial-gradient(900px 600px at 70% 35%, rgba(10,42,102,0.38), transparent 60%),
+              linear-gradient(180deg, #061525, #04101c) !important;
+  color: rgba(255,255,255,0.88) !important;
+  overflow-x: hidden !important;
+}
+
+/* Kill every common white panel used by Minimal Mistakes */
+body,
+.initial-content,
+#main,
+.page,
+.page__inner-wrap,
+.page__content,
+.archive,
+.archive__inner-wrap,
+.archive__item,
+.sidebar,
+.sidebar__right,
+.sidebar__left,
+.page__footer,
+.search-content,
+.search-content__inner-wrap {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Some skins set white on these */
+.layout--single,
+.layout--home,
+.layout--archive,
+.layout--categories,
+.layout--tags,
+.layout--collection,
+.layout--search {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Typography: make everything readable on dark */
+.page__content,
+.page__content p,
+.page__content li,
+.page__content span,
+.page__content div,
+.archive__item-excerpt,
+.page__meta,
+.pagination,
+.taxonomy__section,
+.notice {
+  color: rgba(255,255,255,0.84) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title {
+  color: rgba(255,255,255,0.96) !important;
+}
+
+/* Links: remove blue */
+a, a:visited {
+  color: rgba(255,255,255,0.90) !important;
+}
+a:hover, a:focus {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+/* Borders / separators */
+hr, .page__content hr {
+  border-color: rgba(255,255,255,0.12) !important;
+}
