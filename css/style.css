@@ -357,7 +357,7 @@ a {
 .profile-img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 16px;
     object-fit: cover;
     aspect-ratio: 1;
     border: 1px solid var(--border-color);
