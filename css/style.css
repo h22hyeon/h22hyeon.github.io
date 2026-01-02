@@ -392,6 +392,7 @@ a {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: calc(var(--spacing-xl) + 80px);
 }
 
 .back-link {
@@ -439,7 +440,13 @@ a {
     display: grid;
     grid-template-columns: 400px 1fr;
     gap: var(--spacing-lg);
-    align-items: start;
+    align-items: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-header {
@@ -468,16 +475,23 @@ a {
 }
 
 .about-section h3 {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     margin-bottom: var(--spacing-sm);
     font-weight: 600;
     color: var(--text-primary);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
 }
 
 .about-section p {
     margin-bottom: var(--spacing-sm);
     line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.about-section .lead {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-md);
 }
 
 .contact-links {
