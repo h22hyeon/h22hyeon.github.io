@@ -473,9 +473,31 @@ p.lead a:hover,
     border-color: var(--text-secondary);
 }
 
+.research-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.research-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: var(--text-primary);
+    flex-shrink: 0;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.research-card:hover .research-icon {
+    transform: scale(1.1);
+}
+
 .research-card h3 {
     font-size: 1.375rem;
-    margin-bottom: var(--spacing-sm);
+    margin: 0;
     font-weight: 600;
     letter-spacing: -0.02em;
 }
