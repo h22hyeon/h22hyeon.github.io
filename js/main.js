@@ -103,32 +103,43 @@ document.addEventListener('DOMContentLoaded', function() {
     // Abstract toggle functionality
     const abstractToggles = document.querySelectorAll('.pub-abstract-toggle');
     abstractToggles.forEach(toggle => {
-        const arrow = document.createElement('span');
-        arrow.textContent = '↓';
-        arrow.style.transition = 'transform 0.3s ease';
-        arrow.style.display = 'inline-block';
-        arrow.style.marginLeft = '0.5rem';
-        arrow.style.fontSize = '0.75rem';
-        toggle.appendChild(arrow);
+        // Store original text
+        const originalText = toggle.textContent.trim();
+        toggle.dataset.originalText = originalText;
         
-        toggle.addEventListener('click', function() {
+        // Create Apple-style chevron icon
+        const arrowIcon = document.createElement('span');
+        arrowIcon.className = 'arrow-icon';
+        arrowIcon.innerHTML = `
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        `;
+        
+        // Clear button content and rebuild with text and icon
+        toggle.textContent = '';
+        const textSpan = document.createElement('span');
+        textSpan.textContent = originalText;
+        toggle.appendChild(textSpan);
+        toggle.appendChild(arrowIcon);
+        
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
             const abstractId = this.getAttribute('data-abstract-id');
             const abstract = document.getElementById(abstractId);
+            const textSpan = this.querySelector('span:not(.arrow-icon)');
             
-            if (abstract) {
+            if (abstract && textSpan) {
                 const isActive = abstract.classList.contains('active');
-                const arrowSpan = this.querySelector('span');
                 
                 if (isActive) {
                     abstract.classList.remove('active');
                     this.classList.remove('active');
-                    this.childNodes[0].textContent = 'View abstract';
-                    if (arrowSpan) arrowSpan.style.transform = 'rotate(0deg)';
+                    textSpan.textContent = this.dataset.originalText || 'View abstract';
                 } else {
                     abstract.classList.add('active');
                     this.classList.add('active');
-                    this.childNodes[0].textContent = 'Hide abstract';
-                    if (arrowSpan) arrowSpan.style.transform = 'rotate(180deg)';
+                    textSpan.textContent = 'Hide abstract';
                 }
             }
         });
