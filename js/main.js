@@ -99,5 +99,26 @@ document.addEventListener('DOMContentLoaded', function() {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
+
+    // Abstract toggle functionality
+    const abstractToggles = document.querySelectorAll('.pub-abstract-toggle');
+    abstractToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const abstractId = this.getAttribute('data-abstract-id');
+            const abstract = document.getElementById(abstractId);
+            
+            if (abstract) {
+                const isActive = abstract.classList.contains('active');
+                
+                if (isActive) {
+                    abstract.classList.remove('active');
+                    this.textContent = 'Click to view abstract';
+                } else {
+                    abstract.classList.add('active');
+                    this.textContent = 'Click to hide abstract';
+                }
+            }
+        });
+    });
 });
 

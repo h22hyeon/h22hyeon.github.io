@@ -390,10 +390,11 @@ a {
 }
 
 .lead {
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     font-weight: 300;
+    line-height: 1.6;
 }
 
 p.lead a,
@@ -403,6 +404,10 @@ p.lead a,
     text-decoration: none !important;
     border-bottom: 1px solid rgba(102, 126, 234, 0.3) !important;
     transition: var(--transition);
+}
+
+.lead .no-break {
+    white-space: nowrap;
 }
 
 p.lead a:hover,
@@ -552,6 +557,44 @@ p.lead a:hover,
     background: var(--primary-color);
     color: var(--background);
     border-color: var(--primary-color);
+}
+
+.pub-abstract-toggle {
+    margin-top: var(--spacing-xs);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    background: none;
+    border: none;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: var(--transition);
+    font-family: inherit;
+}
+
+.pub-abstract-toggle:hover {
+    color: var(--text-primary);
+}
+
+.pub-abstract {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0;
+    margin-top: 0;
+}
+
+.pub-abstract.active {
+    max-height: 1000px;
+    padding: var(--spacing-sm) 0;
+    margin-top: var(--spacing-xs);
+}
+
+.pub-abstract p {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin: 0;
 }
 
 /* CV Section */
