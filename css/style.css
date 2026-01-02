@@ -396,15 +396,15 @@ a {
     font-weight: 300;
 }
 
-.lead a {
-    color: #667eea;
+.about-text .lead a {
+    color: #667eea !important;
     text-decoration: none;
     transition: var(--transition);
     border-bottom: 1px solid transparent;
 }
 
-.lead a:hover {
-    color: #764ba2;
+.about-text .lead a:hover {
+    color: #764ba2 !important;
     border-bottom-color: #764ba2;
 }
 
