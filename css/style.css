@@ -390,7 +390,7 @@ a {
 }
 
 .lead {
-    font-size: 1.05rem;
+    font-size: 1.125rem;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     font-weight: 300;
