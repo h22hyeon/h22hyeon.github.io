@@ -442,6 +442,34 @@ a {
     align-items: start;
 }
 
+.about-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.about-section:last-child {
+    margin-bottom: 0;
+}
+
+.about-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+.about-section p {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.7;
+}
+
+.contact-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-sm);
+}
+
 .about-image {
     position: relative;
     overflow: hidden;
