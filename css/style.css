@@ -351,7 +351,7 @@ a {
 }
 
 .about-image {
-    position: relative;
+    flex: 0 0 min(240px, 36vw);
 }
 
 .profile-img {
