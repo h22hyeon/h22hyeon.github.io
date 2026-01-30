@@ -394,7 +394,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     flex-wrap: wrap;
     gap: var(--spacing-sm);
 }
@@ -907,12 +907,13 @@ p.lead a:hover,
 
 .cv-download {
     text-align: center;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
     padding: 0;
+    background: transparent;
 }
 
 .cv-description {
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     font-weight: 300;
@@ -934,29 +935,37 @@ p.lead a:hover,
 
 .cv-preview {
     display: grid;
-    gap: var(--spacing-xl);
+    gap: 0;
 }
 
 .cv-item {
+    background: transparent;
     padding: 0;
+    border-radius: 0;
+    border: none;
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cv-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .cv-item h3 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     margin-bottom: var(--spacing-md);
     font-weight: 600;
     color: var(--text-primary);
     letter-spacing: -0.01em;
-    padding-bottom: var(--spacing-xs);
-    border-bottom: 1px solid var(--border-color);
 }
 
 .cv-entry {
-    margin-bottom: 0;
+    margin-bottom: var(--spacing-md);
 }
 
-.cv-entry > .cv-entry-header:not(:first-child) {
-    margin-top: var(--spacing-md);
+.cv-entry:last-child {
+    margin-bottom: 0;
 }
 
 .cv-entry-header {
