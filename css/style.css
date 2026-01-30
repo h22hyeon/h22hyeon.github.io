@@ -475,17 +475,13 @@ a {
 }
 
 .about-text p {
-    margin-bottom: var(--spacing-xs);
-}
-
-.about-text p:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: var(--spacing-sm);
 }
 
 .about-greeting {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
     line-height: 1.2;
     letter-spacing: -0.02em;
 }
@@ -518,7 +514,7 @@ a {
 .lead {
     font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
     font-weight: 300;
     line-height: 1.6;
 }
@@ -545,7 +541,8 @@ p.lead a:hover,
 }
 
 .skills {
-    margin-top: var(--spacing-xs);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .skills h3 {
