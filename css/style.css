@@ -342,8 +342,8 @@ a {
 }
 
 #about.section {
-    padding-top: calc(var(--spacing-sm) + 80px);
-    padding-bottom: var(--spacing-sm);
+    padding-top: calc(var(--spacing-xs) + 80px);
+    padding-bottom: var(--spacing-xs);
     min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
