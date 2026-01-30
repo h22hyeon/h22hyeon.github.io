@@ -673,7 +673,7 @@ p.lead a:hover,
 
 /* Publications Section */
 .publications-list {
-    max-width: 700px;
+    max-width: 100%;
     margin: 0;
 }
 
