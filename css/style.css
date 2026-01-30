@@ -379,7 +379,7 @@ a {
 }
 
 .dishes-page .section-title {
-    margin-top: var(--spacing-sm);
+    margin-top: calc(var(--spacing-sm) / 2);
 }
 
 #research .section-title {
@@ -387,7 +387,7 @@ a {
 }
 
 #publications .section-header .section-title {
-    margin-top: calc(var(--spacing-md) / 2);
+    margin-top: calc(var(--spacing-sm) / 2);
 }
 
 .section-header {
@@ -526,9 +526,36 @@ a {
 .lead {
     font-size: 0.875rem;
     color: var(--text-secondary);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
     font-weight: 300;
     line-height: 1.6;
+}
+
+.social-links-about {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    margin-top: var(--spacing-sm);
+}
+
+.social-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    transition: var(--transition);
+    opacity: 0.7;
+}
+
+.social-link-icon:hover {
+    color: var(--text-primary);
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.social-link-icon svg {
+    width: 20px;
+    height: 20px;
 }
 
 p.lead a,
