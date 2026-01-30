@@ -674,7 +674,7 @@ p.lead a:hover,
 /* Publications Section */
 .publications-list {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .publications-list .publication-item {
@@ -740,23 +740,25 @@ p.lead a:hover,
 
 
 .pub-image {
-    width: 120px;
-    height: 120px;
-    min-width: 120px;
-    max-width: 120px;
+    width: 160px;
+    height: 100px;
+    min-width: 160px;
+    max-width: 160px;
     flex-shrink: 0;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--border-color);
     background: var(--background-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pub-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
-    aspect-ratio: 1;
 }
 
 .pub-content {
@@ -1201,8 +1203,10 @@ p.lead a:hover,
     }
 
     .pub-image {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 75px;
+        min-width: 120px;
+        max-width: 120px;
     }
 
     .footer-content {
