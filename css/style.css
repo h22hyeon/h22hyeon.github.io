@@ -387,7 +387,7 @@ a {
 }
 
 #publications .section-header .section-title {
-    margin-top: calc(var(--spacing-sm) / 2);
+    margin-top: 0;
 }
 
 .section-header {
