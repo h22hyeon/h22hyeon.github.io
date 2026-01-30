@@ -541,7 +541,7 @@ p.lead a:hover,
 
 .skills {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: var(--spacing-sm);
 }
 
 .skills h3 {
