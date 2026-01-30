@@ -426,7 +426,7 @@ a {
 }
 
 .publications-page-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: var(--spacing-md);
     max-width: 800px;
     margin-left: auto;
@@ -529,7 +529,7 @@ a {
 }
 
 .lead {
-    font-size: 0.9375rem;
+    font-size: 1rem;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     font-weight: 300;
