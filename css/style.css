@@ -359,7 +359,7 @@ a {
 }
 
 .dishes-page .section {
-    padding-top: calc(var(--spacing-lg) + 80px);
+    padding-top: calc(var(--spacing-md) + 80px);
 }
 
 #cv.section {
