@@ -354,12 +354,16 @@ a {
 }
 
 #publications.section {
-    padding-top: calc(var(--spacing-md) + 80px);
+    padding-top: calc(var(--spacing-sm) + 80px);
     padding-bottom: var(--spacing-md);
 }
 
 .dishes-page .section {
     padding-top: calc(var(--spacing-lg) + 80px);
+}
+
+#cv.section {
+    padding-top: calc(var(--spacing-sm) + 80px);
 }
 
 .section-alt {
@@ -944,17 +948,17 @@ p.lead a:hover,
     border-radius: 0;
     border: none;
     padding-bottom: var(--spacing-lg);
-    border-bottom: 1px solid var(--border-color);
 }
 
 .cv-item:last-child {
-    border-bottom: none;
     padding-bottom: 0;
 }
 
 .cv-item h3 {
     font-size: 1.25rem;
     margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
     font-weight: 600;
     color: var(--text-primary);
     letter-spacing: -0.01em;
