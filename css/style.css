@@ -342,8 +342,8 @@ a {
 }
 
 #about.section {
-    padding-top: calc(var(--spacing-md) + 80px);
-    padding-bottom: var(--spacing-md);
+    padding-top: calc(var(--spacing-sm) + 80px);
+    padding-bottom: var(--spacing-sm);
     min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
@@ -477,7 +477,7 @@ a {
 .about-greeting {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     line-height: 1.2;
     letter-spacing: -0.02em;
 }
@@ -510,7 +510,7 @@ a {
 .lead {
     font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     font-weight: 300;
     line-height: 1.6;
 }
@@ -537,7 +537,7 @@ p.lead a:hover,
 }
 
 .skills {
-    margin-top: var(--spacing-md);
+    margin-top: var(--spacing-sm);
 }
 
 .skills h3 {
